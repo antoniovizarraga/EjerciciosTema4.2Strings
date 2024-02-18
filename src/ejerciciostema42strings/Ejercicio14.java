@@ -1,6 +1,5 @@
 package ejerciciostema42strings;
 
-import java.util.Arrays;
 
 /**
  * Clase que contendrá un algoritmo o función que reciba como parámetro una
