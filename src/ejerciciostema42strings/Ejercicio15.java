@@ -38,6 +38,9 @@ public class Ejercicio15 {
 		 * Fisher-Yates. */
 		for (int i = text.length() - 1; i > 0; i--) {
 			randomValue = rand.nextInt(0, text.length());
+			if(letters[i] == ' ' || letters[randomValue] == ' ') {
+				continue;
+			}
 			char temp = letters[i];
 			letters[i] = letters[randomValue];
 			letters[randomValue] = temp;
@@ -70,7 +73,7 @@ public class Ejercicio15 {
 			anagram = randomLetters(WORDTOGUESS);
 			System.out.println(anagram);
 			
-		}while(!userValue.equals(WORDTOGUESS));
+		}while(!userValue.equalsIgnoreCase(WORDTOGUESS));
 		
 		/* Si salimos del bucle, significa que el usuario ha adivinado la palabra
 		 * o frase. Por lo que imprimimos un mensaje de victoria. */
