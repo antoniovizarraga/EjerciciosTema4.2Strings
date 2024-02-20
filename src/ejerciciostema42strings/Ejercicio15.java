@@ -67,7 +67,7 @@ public class Ejercicio15 {
 		// Bucle en el que tendrá que adivinar la palabra o frase.
 		do {
 			userValue = GetValue.getString("Escriba aquí: ");
-			anagram = randomLetters(userValue);
+			anagram = randomLetters(WORDTOGUESS);
 			System.out.println(anagram);
 			
 		}while(!userValue.equals(WORDTOGUESS));
